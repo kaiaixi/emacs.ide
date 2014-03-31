@@ -145,7 +145,8 @@
  '(ecb-auto-update-methods-after-save t)
  '(ecb-layout-window-sizes nil)
  '(ecb-options-version "2.40")
- '(ecb-source-path (quote ("./"))))
+ '(ecb-source-path (quote ("./")))
+ '(ecb-windows-width 0.25))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -154,3 +155,10 @@
  )
 (put 'set-goal-column 'disabled nil)
 (put 'upcase-region 'disabled nil)
+
+(add-to-list 'load-path "~/.emacs.d/git-modes")
+(add-to-list 'load-path "~/.emacs.d/magit")
+(eval-after-load 'info
+  '(progn (info-initialize)
+          (add-to-list 'Info-directory-list "~/.emacs.d/magit/")))
+(require 'magit)
