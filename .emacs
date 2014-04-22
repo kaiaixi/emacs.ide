@@ -29,6 +29,15 @@
 ;; TAB = 4 Spaces
 (setq default-tab-width 4)
 
+;;Hide - Show
+(add-hook 'c-mode-common-hook   'hs-minor-mode)
+(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(add-hook 'java-mode-hook       'hs-minor-mode)
+(add-hook 'ess-mode-hook       'hs-minor-mode)
+(add-hook 'perl-mode-hook       'hs-minor-mode)
+(add-hook 'sh-mode-hook         'hs-minor-mode)
+(global-set-key [f8] 'hs-toggle-hiding)
+
 ;; Go - to - char
 ;; go-to-char 非常感谢 Oliver Scholz 提供这个函数给 我。
 ;;这个函数是一个 vi 的 "f" 命令的替代品。vi的用户知道，vi有 一个特别好的命令 "f"。当你按 "fx", x 是任意一个字符时
