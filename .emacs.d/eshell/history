@@ -1,0 +1,11 @@
+cd ..
+ls
+cd src
+ls
+cd ..
+ls
+cd my_inc/
+ls
+cat tools.h 
+cd ..
+ls

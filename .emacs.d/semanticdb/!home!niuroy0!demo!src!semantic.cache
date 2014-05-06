@@ -1,0 +1,63 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("myadd.h" include (:system-flag t) nil [20 38])
+            ("tools.h" include (:system-flag t) nil [39 57])
+            ("./h.h" include nil nil [58 74])
+            ("main" function (:type "int") nil [76 197])
+            ("main2" function (:type "int") nil [199 217]))          
+    :file "main.cpp"
+    :pointmax 218
+    :fsize 217
+    :lastmodtime '(21352 31275 995949 347000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "helper.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("Helper" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [17 24])
+                    ("help" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [67 79]))                  
+                :type "class")
+                nil [1 82]))          
+    :file "helper.h"
+    :pointmax 83
+    :fsize 82
+    :lastmodtime '(21334 65239 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "h.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("get_add_h" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15 20]))                  
+                :type "int")
+                nil [1 21])
+            ("get_add_h_2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38 43]))                  
+                :type "int")
+                nil [22 44]))          
+    :file "h.h"
+    :pointmax 46
+    :fsize 45
+    :lastmodtime '(21352 29010 578785 354000)
+    :unmatched-syntax '((symbol 26 . 34) (INT 22 . 25))
+    )
+   )
+  :file "!home!niuroy0!demo!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

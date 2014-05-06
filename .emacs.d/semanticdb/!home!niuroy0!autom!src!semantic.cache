@@ -1,0 +1,53 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("helper.h" include nil nil [1 20])
+            ("myadd.h" include (:system-flag t) nil [21 39])
+            ("helper2.h" include (:system-flag t) nil [40 60])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [71 80])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [81 94]))                  
+                :type "int")
+                nil [62 176]))          
+    :file "main.cpp"
+    :pointmax 177
+    :fsize 176
+    :lastmodtime '(21352 26016 146765 715000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "helper.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("Helper" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [16 23])
+                    ("help" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [26 38])
+                    ("dummy" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [41 54]))                  
+                :type "class")
+                nil [1 57]))          
+    :file "helper.h"
+    :pointmax 58
+    :fsize 57
+    :lastmodtime '(21352 25290 688982 553000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!niuroy0!autom!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

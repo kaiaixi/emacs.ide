@@ -1,0 +1,37 @@
+;; Object my_inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "my_inc/"
+  :tables (list 
+   (semanticdb-table "myadd.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MyAdd" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [15 22])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [33 39])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [40 46]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [25 47])
+                    ("addnew" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [61 67])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [68 74]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [50 75]))                  
+                :type "class")
+                nil [1 78]))          
+    :file "myadd.h"
+    :pointmax 80
+    :fsize 78
+    :lastmodtime '(21352 25895 267302 468000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!niuroy0!autom!my_inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

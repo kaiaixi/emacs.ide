@@ -1,0 +1,150 @@
+((("ecb-deactivate" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("ecb-activate" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("f2" .
+   [1 0])
+  ("f1" .
+   [1 0])
+  ("super" .
+   [2 0 0 0 0])
+  ("f6" .
+   [1 0])
+  ("s" .
+   [1])
+  ("highlight-indentation" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fa-config-default" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("function-args" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("function-args-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("dummy2" .
+   [2 0 0 0 0 0])
+  ("add_obj" .
+   [0 0 0 1 1 0 0])
+  ("pr" .
+   [1 0])
+  ("m" .
+   [1])
+  ("help" .
+   [1 0 0 0])
+  ("my:add-semantic-to-autocomplete" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("ac-source-semantic" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("ac-sources" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("add-to-list" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("semantic-mode" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("semantic" .
+   [1 0 0 0 0 0 0 0])
+  ("se" .
+   [1 0])
+  ("custom-set-variables" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("c++-mode-map" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("my:flymake-google-init" .
+   [0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c-mode-hook" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("flymake-google-cpplint-load" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("flymake-google-cpplint" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("string.h" .
+   [0 0 0 0 0 0 0 1])
+  ("stab.h" .
+   [1 0 1 1 0 0])
+  ("yas-global-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("yasnippet" .
+   [0 0 0 0 0 0 0 0 1])
+  ("require" .
+   [1 0 0 2 2 0 4])
+  ("while" .
+   [0 0 1 0 1])
+  ("main" .
+   [10 0 0 0])
+  ("for" .
+   [0 0 1])
+  ("cout" .
+   [1 0 0 0])
+  ("f" .
+   [2])
+  ("defun" .
+   [3 0 0 0 2])
+  ("add-hook" .
+   [1 0 0 0 0 6 0 1])
+  ("c++-mode" .
+   [0 0 1 0 0 0 0 1])
+  ("my:ac-c-header-init" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("C-up" .
+   [2 0 0 0])
+  ("add-timeout" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("global-map" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("kbd" .
+   [1 0 0])
+  ("iedit-mode" .
+   [0 0 0 0 0 0 0 0 1 0])
+  ("inc" .
+   [2 0 0])
+  ("stdio.h" .
+   [1 0 1 0 0 0 0])
+  ("google-c-style" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("c-mode-common-hook" .
+   [0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 2])
+  ("helper.h" .
+   [1 0 0 1 1 0 0 0])
+  ("void" .
+   [1 0 0 0])
+  ("MyAdd" .
+   [0 0 1 0 0])
+  ("helper" .
+   [0 1 0 0 0 0])
+  ("include" .
+   [1 0 0 0 0 0 0])
+  ("ac-source-semantic-raw" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("add" .
+   [1 0 0])
+  ("printf" .
+   [0 0 1 0 0 0])
+  ("net" .
+   [1 0 0])
+  ("setq" .
+   [2 0 0 0])
+  ("nil" .
+   [2 0 0])
+  ("color-theme" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("color-theme-initialize" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("hs-toggle-hiding" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("t" .
+   [1])
+  ("tab-width" .
+   [0 0 0 0 0 0 1 0 0])
+  ("Index" .
+   [1 0 0 0 0])
+  ("indent-tabs-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("my-c-mode-common-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("asoc" .
+   [1 0 0 0])
+  ("dsv" .
+   [0 0 1])
+  ("color-theme-xemacs" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-robin-hood" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])))

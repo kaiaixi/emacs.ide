@@ -1,0 +1,536 @@
+;; Object netinet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "netinet/"
+  :tables (list 
+   (semanticdb-table "sctp_output.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "sctp_output.c"
+    :pointmax 451552
+    :fsize 451551
+    :lastmodtime '(21350 18451 674715 902000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sctp_os_bsd.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("sys/cdefs.h" include (:system-flag t) nil [1732 1754])
+            ("__FBSDID" function
+               (:prototype-flag t
+                :type "int")
+                nil [1755 1855])
+            ("_NETINET_SCTP_OS_BSD_H_" variable (:constant-flag t) nil [1897 1920])
+            ("opt_ipsec.h" include nil nil [1940 1962])
+            ("opt_compat.h" include nil nil [1963 1986])
+            ("opt_inet6.h" include nil nil [1987 2009])
+            ("opt_inet.h" include nil nil [2010 2031])
+            ("opt_sctp.h" include nil nil [2032 2053])
+            ("sys/param.h" include (:system-flag t) nil [2055 2077])
+            ("sys/ktr.h" include (:system-flag t) nil [2078 2098])
+            ("sys/systm.h" include (:system-flag t) nil [2099 2121])
+            ("sys/malloc.h" include (:system-flag t) nil [2122 2145])
+            ("sys/kernel.h" include (:system-flag t) nil [2146 2169])
+            ("sys/sysctl.h" include (:system-flag t) nil [2170 2193])
+            ("sys/mbuf.h" include (:system-flag t) nil [2194 2215])
+            ("sys/protosw.h" include (:system-flag t) nil [2216 2240])
+            ("sys/socket.h" include (:system-flag t) nil [2241 2264])
+            ("sys/socketvar.h" include (:system-flag t) nil [2265 2291])
+            ("sys/jail.h" include (:system-flag t) nil [2292 2313])
+            ("sys/sysctl.h" include (:system-flag t) nil [2314 2337])
+            ("sys/resourcevar.h" include (:system-flag t) nil [2338 2366])
+            ("sys/uio.h" include (:system-flag t) nil [2367 2387])
+            ("sys/lock.h" include (:system-flag t) nil [2388 2409])
+            ("sys/rwlock.h" include (:system-flag t) nil [2410 2433])
+            ("sys/kthread.h" include (:system-flag t) nil [2434 2458])
+            ("sys/priv.h" include (:system-flag t) nil [2459 2480])
+            ("sys/random.h" include (:system-flag t) nil [2481 2504])
+            ("sys/limits.h" include (:system-flag t) nil [2505 2528])
+            ("sys/queue.h" include (:system-flag t) nil [2529 2551])
+            ("machine/cpu.h" include (:system-flag t) nil [2552 2576])
+            ("net/if.h" include (:system-flag t) nil [2578 2597])
+            ("net/if_types.h" include (:system-flag t) nil [2598 2623])
+            ("net/if_var.h" include (:system-flag t) nil [2624 2647])
+            ("net/route.h" include (:system-flag t) nil [2648 2670])
+            ("net/vnet.h" include (:system-flag t) nil [2671 2692])
+            ("netinet/in.h" include (:system-flag t) nil [2694 2717])
+            ("netinet/in_systm.h" include (:system-flag t) nil [2718 2747])
+            ("netinet/ip.h" include (:system-flag t) nil [2748 2771])
+            ("netinet/in_pcb.h" include (:system-flag t) nil [2772 2799])
+            ("netinet/in_var.h" include (:system-flag t) nil [2800 2827])
+            ("netinet/ip_var.h" include (:system-flag t) nil [2828 2855])
+            ("netinet/ip_icmp.h" include (:system-flag t) nil [2856 2884])
+            ("netinet/icmp_var.h" include (:system-flag t) nil [2885 2914])
+            ("netinet/ip_options.h" include (:system-flag t) nil [3320 3351])
+            ("crypto/sha1.h" include (:system-flag t) nil [3353 3377])
+            ("crypto/sha2/sha2.h" include (:system-flag t) nil [3378 3407])
+            ("in6pcb" variable (:constant-flag t) nil [3432 3438])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3531 3542]))                  
+                :type "int")
+                nil [3516 3543])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_STRMI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3559 3572]))                  
+                :type "int")
+                nil [3544 3573])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_STRMO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3589 3602]))                  
+                :type "int")
+                nil [3574 3603])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_ASC_ADDR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3619 3635]))                  
+                :type "int")
+                nil [3604 3636])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_ASC_IT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3652 3666]))                  
+                :type "int")
+                nil [3637 3667])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_AUTH_CL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3683 3698]))                  
+                :type "int")
+                nil [3668 3699])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_AUTH_KY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3715 3730]))                  
+                :type "int")
+                nil [3700 3731])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_AUTH_HL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3747 3762]))                  
+                :type "int")
+                nil [3732 3763])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_AUTH_IF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3779 3794]))                  
+                :type "int")
+                nil [3764 3795])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_STRESET" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3811 3826]))                  
+                :type "int")
+                nil [3796 3827])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_CMSG" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3843 3855]))                  
+                :type "int")
+                nil [3828 3856])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_COPYAL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3872 3886]))                  
+                :type "int")
+                nil [3857 3887])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_VRF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3903 3914]))                  
+                :type "int")
+                nil [3888 3915])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_IFA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3931 3942]))                  
+                :type "int")
+                nil [3916 3943])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_IFN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3959 3970]))                  
+                :type "int")
+                nil [3944 3971])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_TIMW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3987 3999]))                  
+                :type "int")
+                nil [3972 4000])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_MVRF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4016 4028]))                  
+                :type "int")
+                nil [4001 4029])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_ITER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4045 4057]))                  
+                :type "int")
+                nil [4030 4058])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_SOCKOPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4074 4089]))                  
+                :type "int")
+                nil [4059 4090])
+            ("MALLOC_DECLARE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SCTP_M_MCORE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4106 4119]))                  
+                :type "int")
+                nil [4091 4120])
+            ("SCTP_CTR6" variable (:constant-flag t) nil [4250 4259])
+            ("MODULE_GLOBAL" variable (:constant-flag t) nil [4515 4528])
+            ("V_system_base_info" variable (:constant-flag t) nil [4561 4579])
+            ("SCTP_BASE_INFO" variable (:constant-flag t) nil [4611 4625])
+            ("SCTP_BASE_STATS" variable (:constant-flag t) nil [4674 4689])
+            ("SCTP_BASE_STATS_SYSCTL" variable (:constant-flag t) nil [4726 4748])
+            ("SCTP_BASE_STAT" variable (:constant-flag t) nil [4794 4808])
+            ("SCTP_BASE_SYSCTL" variable (:constant-flag t) nil [4858 4874])
+            ("SCTP_BASE_VAR" variable (:constant-flag t) nil [4931 4944])
+            ("USER_ADDR_NULL" variable (:constant-flag t) nil [4992 5006])
+            ("SCTP_PRINTF" variable (:constant-flag t) nil [5042 5053])
+            ("SCTPDBG" variable (:constant-flag t) nil [5512 5519])
+            ("SCTPDBG_ADDR" variable (:constant-flag t) nil [5546 5558])
+            ("SCTP_LTRACE_CHK" variable (:constant-flag t) nil [5809 5824])
+            ("SCTP_LTRACE_ERR_RET_PKT" variable (:constant-flag t) nil [6415 6438])
+            ("SCTP_LTRACE_ERR_RET" variable (:constant-flag t) nil [6477 6496])
+            ("SCTP_MAX_VRF_ID" variable (:constant-flag t) nil [6593 6608])
+            ("SCTP_SIZE_OF_VRF_HASH" variable (:constant-flag t) nil [6620 6641])
+            ("SCTP_IFNAMSIZ" variable (:constant-flag t) nil [6652 6665])
+            ("SCTP_DEFAULT_VRFID" variable (:constant-flag t) nil [6684 6702])
+            ("SCTP_VRF_ADDR_HASH_SIZE" variable (:constant-flag t) nil [6713 6736])
+            ("SCTP_VRF_IFN_HASH_SIZE" variable (:constant-flag t) nil [6748 6770])
+            ("SCTP_INIT_VRF_TABLEID" variable (:constant-flag t) nil [6781 6802])
+            ("SCTP_IFN_IS_IFT_LOOP" variable (:constant-flag t) nil [6817 6837])
+            ("SCTP_ROUTE_IS_REAL_LOOP" variable (:constant-flag t) nil [6881 6904])
+            ("SCTP_GET_IFN_VOID_FROM_ROUTE" variable (:constant-flag t) nil [7175 7203])
+            ("SCTP_GET_IF_INDEX_FROM_ROUTE" variable (:constant-flag t) nil [7242 7270])
+            ("SCTP_ROUTE_HAS_VALID_IFN" variable (:constant-flag t) nil [7313 7337])
+            ("SCTP_MALLOC" variable (:constant-flag t) nil [7424 7435])
+            ("SCTP_FREE" variable (:constant-flag t) nil [7542 7551])
+            ("SCTP_MALLOC_SONAME" variable (:constant-flag t) nil [7588 7606])
+            ("SCTP_FREE_SONAME" variable (:constant-flag t) nil [7720 7736])
+            ("SCTP_PROCESS_STRUCT" variable (:constant-flag t) nil [7771 7790])
+            ("vm/uma.h" include (:system-flag t) nil [7842 7861])
+            ("sctp_zone_t" type
+               (:typedef ("uma_zone" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "uma_zone"
+                :type "typedef")
+                nil [7905 7942])
+            ("SCTP_ZONE_INIT" variable (:constant-flag t) nil [7952 7966])
+            ("SCTP_ZONE_DESTROY" variable (:constant-flag t) nil [8123 8140])
+            ("SCTP_ZONE_GET" variable (:constant-flag t) nil [8227 8240])
+            ("SCTP_ZONE_FREE" variable (:constant-flag t) nil [8350 8364])
+            ("SCTP_HASH_INIT" variable (:constant-flag t) nil [8418 8432])
+            ("SCTP_HASH_FREE" variable (:constant-flag t) nil [8508 8522])
+            ("SCTP_M_COPYM" variable (:constant-flag t) nil [8585 8597])
+            ("sys/callout.h" include (:system-flag t) nil [8624 8648])
+            ("sctp_os_timer_t" type
+               (:typedef ("callout" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "callout"
+                :type "typedef")
+                nil [8649 8688])
+            ("SCTP_OS_TIMER_INIT" variable (:constant-flag t) nil [8699 8717])
+            ("SCTP_OS_TIMER_START" variable (:constant-flag t) nil [8752 8771])
+            ("SCTP_OS_TIMER_STOP" variable (:constant-flag t) nil [8794 8812])
+            ("SCTP_OS_TIMER_STOP_DRAIN" variable (:constant-flag t) nil [8834 8858])
+            ("SCTP_OS_TIMER_PENDING" variable (:constant-flag t) nil [8881 8902])
+            ("SCTP_OS_TIMER_ACTIVE" variable (:constant-flag t) nil [8927 8947])
+            ("SCTP_OS_TIMER_DEACTIVATE" variable (:constant-flag t) nil [8971 8995])
+            ("sctp_get_tick_count" variable (:constant-flag t) nil [9024 9043])
+            ("SCTP_UNUSED" variable (:constant-flag t) nil [9063 9074])
+            ("SCTP_BUF_LEN" variable (:constant-flag t) nil [9171 9183])
+            ("SCTP_BUF_NEXT" variable (:constant-flag t) nil [9206 9219])
+            ("SCTP_BUF_NEXT_PKT" variable (:constant-flag t) nil [9243 9260])
+            ("SCTP_BUF_RESV_UF" variable (:constant-flag t) nil [9287 9303])
+            ("SCTP_BUF_AT" variable (:constant-flag t) nil [9339 9350])
+            ("SCTP_BUF_IS_EXTENDED" variable (:constant-flag t) nil [9385 9405])
+            ("SCTP_BUF_EXTEND_SIZE" variable (:constant-flag t) nil [9438 9458])
+            ("SCTP_BUF_TYPE" variable (:constant-flag t) nil [9490 9503])
+            ("SCTP_BUF_RECVIF" variable (:constant-flag t) nil [9527 9542])
+            ("SCTP_BUF_PREPEND" variable (:constant-flag t) nil [9574 9590])
+            ("SCTP_ALIGN_TO_END" variable (:constant-flag t) nil [9610 9627])
+            ("SCTP_PKTLOG_WRITERS_NEED_LOCK" variable (:constant-flag t) nil [10078 10107])
+            ("SCTP_GATHER_MTU_FROM_IFN_INFO" variable (:constant-flag t) nil [10203 10232])
+            ("SCTP_GATHER_MTU_FROM_ROUTE" variable (:constant-flag t) nil [10291 10317])
+            ("SCTP_GATHER_MTU_FROM_INTFC" variable (:constant-flag t) nil [10384 10410])
+            ("SCTP_SET_MTU_OF_ROUTE" variable (:constant-flag t) nil [10507 10528])
+            ("SCTP_REGISTER_INTERFACE" variable (:constant-flag t) nil [10803 10826])
+            ("SCTP_DEREGISTER_INTERFACE" variable (:constant-flag t) nil [10849 10874])
+            ("SCTP_BUF_EXTEND_BASE" variable (:constant-flag t) nil [11022 11042])
+            ("SCTP_BUF_EXTEND_REFCNT" variable (:constant-flag t) nil [11118 11140])
+            ("SCTP_BUF_GET_FLAGS" variable (:constant-flag t) nil [11259 11277])
+            ("SCTP_HEADER_TO_CHAIN" variable (:constant-flag t) nil [11493 11513])
+            ("SCTP_DETACH_HEADER_FROM_CHAIN" variable (:constant-flag t) nil [11529 11558])
+            ("SCTP_HEADER_LEN" variable (:constant-flag t) nil [11570 11585])
+            ("SCTP_GET_HEADER_FOR_OUTPUT" variable (:constant-flag t) nil [11617 11643])
+            ("SCTP_RELEASE_HEADER" variable (:constant-flag t) nil [11661 11680])
+            ("SCTP_RELEASE_PKT" variable (:constant-flag t) nil [11692 11708])
+            ("SCTP_ENABLE_UDP_CSUM" variable (:constant-flag t) nil [11736 11756])
+            ("SCTP_GET_PKT_VRFID" variable (:constant-flag t) nil [11898 11916])
+            ("SCTP_ATTACH_CHAIN" variable (:constant-flag t) nil [12051 12068])
+            ("SCTP_IS_IT_BROADCAST" variable (:constant-flag t) nil [12323 12343])
+            ("SCTP_IS_IT_LOOPBACK" variable (:constant-flag t) nil [12429 12448])
+            ("SCTP_GET_HLIM" variable (:constant-flag t) nil [12695 12708])
+            ("SCTP_IPV6_V6ONLY" variable (:constant-flag t) nil [12868 12884])
+            ("SCTP_SO_IS_NBIO" variable (:constant-flag t) nil [12986 13001])
+            ("SCTP_SET_SO_NBIO" variable (:constant-flag t) nil [13041 13057])
+            ("SCTP_CLEAR_SO_NBIO" variable (:constant-flag t) nil [13098 13116])
+            ("SCTP_SO_TYPE" variable (:constant-flag t) nil [13184 13196])
+            ("SCTP_SORESERVE" variable (:constant-flag t) nil [13261 13275])
+            ("SCTP_SOWAKEUP" variable (:constant-flag t) nil [13348 13361])
+            ("SCTP_SB_CLEAR" variable (:constant-flag t) nil [13434 13447])
+            ("SCTP_SB_LIMIT_RCV" variable (:constant-flag t) nil [13525 13542])
+            ("SCTP_SB_LIMIT_SND" variable (:constant-flag t) nil [13575 13592])
+            ("sctp_route_t" type
+               (:typedef ("route" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "route"
+                :type "typedef")
+                nil [13649 13683])
+            ("sctp_rtentry_t" type
+               (:typedef ("rtentry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "rtentry"
+                :type "typedef")
+                nil [13684 13722])
+            ("SCTP_RTALLOC" variable (:constant-flag t) nil [14022 14034])
+            ("SCTP_ZERO_COPY_EVENT" variable (:constant-flag t) nil [14138 14158])
+            ("SCTP_ZERO_COPY_SENDQ_EVENT" variable (:constant-flag t) nil [14221 14247])
+            ("M_NOTIFICATION" variable (:constant-flag t) nil [14311 14325])
+            ("SCTP_IP_OUTPUT" variable (:constant-flag t) nil [14398 14412])
+            ("SCTP_IP6_OUTPUT" variable (:constant-flag t) nil [14783 14798])
+            ("sctp_get_mbuf_for_msg" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("space_needed" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15193 15219])
+                    ("want_header" variable (:type "int") (reparse-symbol arg-sub-list) [15224 15240])
+                    ("how" variable (:type "int") (reparse-symbol arg-sub-list) [15241 15249])
+                    ("allonebuf" variable (:type "int") (reparse-symbol arg-sub-list) [15250 15264])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [15265 15274]))                  
+                :type ("mbuf" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15157 15275])
+            ("SCTP_READ_RANDOM" variable (:constant-flag t) nil [15306 15322])
+            ("SCTP_SHA1_CTX" variable (:constant-flag t) nil [15400 15413])
+            ("SCTP_SHA1_INIT" variable (:constant-flag t) nil [15432 15446])
+            ("SCTP_SHA1_UPDATE" variable (:constant-flag t) nil [15465 15481])
+            ("SCTP_SHA1_FINAL" variable (:constant-flag t) nil [15501 15516])
+            ("SCTP_SHA256_CTX" variable (:constant-flag t) nil [15556 15571])
+            ("SCTP_SHA256_INIT" variable (:constant-flag t) nil [15592 15608])
+            ("SCTP_SHA256_UPDATE" variable (:constant-flag t) nil [15629 15647])
+            ("SCTP_SHA256_FINAL" variable (:constant-flag t) nil [15670 15687])
+            ("SCTP_DECREMENT_AND_CHECK_REFCOUNT" variable (:constant-flag t) nil [15738 15771])
+            ("SCTP_SAVE_ATOMIC_DECREMENT" variable (:constant-flag t) nil [16035 16061]))          
+    :file "sctp_os_bsd.h"
+    :pointmax 16195
+    :fsize 16194
+    :lastmodtime '(21208 28814 0 0)
+    :unmatched-syntax '((string 1764 . 1853))
+    :lexical-table 
+        '(("MODULE_GLOBAL" (spp-arg-list ("__SYMBOL") 4528 . 4538) . ((spp-symbol-merge ((symbol "V_" 4539 . 4541) (symbol "__SYMBOL" 4543 . 4551)) 4539 . 4551)))
+          ("SCTP_BASE_STAT" (spp-arg-list ("__m") 4808 . 4813) . 
+              ((symbol "V_system_base_info" 4818 . 4836) (punctuation "." 4836 . 4837) (symbol "sctpstat" 4837 . 4845) (punctuation "." 4845 . 4846) (symbol "__m" 4846 . 4849)))
+          ("SCTP_LTRACE_CHK" (spp-arg-list ("a" "b" "c" "d") 5824 . 5836))
+          ("SCTP_LTRACE_ERR_RET_PKT" (spp-arg-list ("m" "inp" "stcb" "net" "file" "err") 6438 . 6468))
+          ("SCTP_DETACH_HEADER_FROM_CHAIN" (spp-arg-list ("m") 11558 . 11561))
+          ("SCTP_RTALLOC" (spp-arg-list ("ro" "vrf_id") 14034 . 14046) . ((symbol "rtalloc_ign" 14047 . 14058) (semantic-list "((struct route *)ro, 0UL)" 14058 . 14083)))
+          ("SCTP_SAVE_ATOMIC_DECREMENT" (spp-arg-list ("addr" "val") 16061 . 16072) . ((semantic-list "{ \\
+	int32_t oldval; \\
+	oldval = atomic_fetchadd_int(addr, -val); \\
+	if (oldval < val) { \\
+		*addr = 0; \\
+	} \\
+}" 16075 . 16187)))
+          ("SCTP_CTR6" . ((symbol "CTR6" 4260 . 4264)))
+          ("SCTPDBG" (spp-arg-list ("level" "params...") 5519 . 5537))
+          ("SCTP_GET_IF_INDEX_FROM_ROUTE" (spp-arg-list ("ro") 7270 . 7274) . 
+              ((semantic-list "(ro)" 7275 . 7279) (punctuation "-" 7279 . 7280) (punctuation ">" 7280 . 7281) (symbol "ro_rt" 7281 . 7286) (punctuation "-" 7286 . 7287) (punctuation ">" 7287 . 7288) (symbol "rt_ifp" 7288 . 7294) (punctuation "-" 7294 . 7295) (punctuation ">" 7295 . 7296) (symbol "if_index" 7296 . 7304)))
+          ("SCTP_FREE" (spp-arg-list ("var" "type") 7551 . 7562) . ((symbol "free" 7563 . 7567) (semantic-list "(var, type)" 7567 . 7578)))
+          ("SCTP_BUF_RESV_UF" (spp-arg-list ("m" "size") 9303 . 9312) . 
+              ((symbol "m" 9313 . 9314) (punctuation "-" 9314 . 9315) (punctuation ">" 9315 . 9316) (symbol "m_data" 9316 . 9322) (punctuation "+" 9323 . 9324) (punctuation "=" 9324 . 9325) (symbol "size" 9326 . 9330)))
+          ("SCTP_BUF_TYPE" (spp-arg-list ("m") 9503 . 9506) . ((semantic-list "(m->m_type)" 9507 . 9518)))
+          ("SCTP_RELEASE_HEADER" (spp-arg-list ("m") 11680 . 11683))
+          ("SCTP_ENABLE_UDP_CSUM" (spp-arg-list ("m") 11756 . 11759) . 
+              ((DO "do" 11760 . 11762) (semantic-list "{ \\
+					m->m_pkthdr.csum_flags = CSUM_UDP; \\
+					m->m_pkthdr.csum_data = offsetof(struct udphdr, uh_sum); \\
+				}" 11763 . 11878) (WHILE "while" 11879 . 11884) (semantic-list "(0)" 11885 . 11888)))
+          ("SCTP_IS_IT_BROADCAST" (spp-arg-list ("dst" "m") 12343 . 12351) . ((semantic-list "((m->m_flags & M_PKTHDR) ? in_broadcast(dst, m->m_pkthdr.rcvif) : 0)" 12352 . 12420)))
+          ("SCTP_IPV6_V6ONLY" (spp-arg-list ("inp") 12884 . 12889) . ((semantic-list "(((struct inpcb *)inp)->inp_flags & IN6P_IPV6_V6ONLY)" 12890 . 12943)))
+          ("SCTP_SHA1_INIT" . ((symbol "SHA1Init" 15448 . 15456)))
+          ("SCTP_SHA1_FINAL" (spp-arg-list ("x" "y") 15516 . 15521) . ((symbol "SHA1Final" 15522 . 15531) (semantic-list "((caddr_t)x, y)" 15531 . 15546)))
+          ("SCTP_SHA256_UPDATE" . ((symbol "SHA256_Update" 15648 . 15661)))
+          ("_NETINET_SCTP_OS_BSD_H_")
+          ("in6pcb" . ((symbol "inpcb" 3440 . 3445)))
+          ("SCTP_HASH_INIT" (spp-arg-list ("size" "hashmark") 8432 . 8448) . ((symbol "hashinit_flags" 8449 . 8463) (semantic-list "(size, M_PCB, hashmark, HASH_NOWAIT)" 8463 . 8499)))
+          ("SCTP_BUF_AT" (spp-arg-list ("m" "size") 9350 . 9359) . 
+              ((symbol "m" 9360 . 9361) (punctuation "-" 9361 . 9362) (punctuation ">" 9362 . 9363) (symbol "m_data" 9363 . 9369) (punctuation "+" 9370 . 9371) (symbol "size" 9372 . 9376)))
+          ("SCTP_BUF_IS_EXTENDED" (spp-arg-list ("m") 9405 . 9408) . ((semantic-list "(m->m_flags & M_EXT)" 9409 . 9429)))
+          ("SCTP_ALIGN_TO_END" (spp-arg-list ("m" "len") 9627 . 9635) . 
+              ((IF "if" 9636 . 9638) (semantic-list "(m->m_flags & M_PKTHDR)" 9638 . 9661) (semantic-list "{ \\
+                                     MH_ALIGN(m, len); \\
+                                  }" 9662 . 9758) (ELSE "else" 9759 . 9763) (IF "if" 9764 . 9766) (semantic-list "((m->m_flags & M_EXT) == 0)" 9767 . 9794) (semantic-list "{ \\
+                                     M_ALIGN(m, len); \\
+                                  }" 9795 . 9890)))
+          ("SCTP_REGISTER_INTERFACE" (spp-arg-list ("ifhandle" "af") 10826 . 10840))
+          ("SCTP_SB_LIMIT_SND" (spp-arg-list ("so") 13592 . 13596) . 
+              ((symbol "so" 13597 . 13599) (punctuation "-" 13599 . 13600) (punctuation ">" 13600 . 13601) (symbol "so_snd" 13601 . 13607) (punctuation "." 13607 . 13608) (symbol "sb_hiwat" 13608 . 13616)))
+          ("SCTP_DECREMENT_AND_CHECK_REFCOUNT" (spp-arg-list ("addr") 15771 . 15777) . ((semantic-list "(atomic_fetchadd_int(addr, -1) == 1)" 15778 . 15814)))
+          ("SCTP_BASE_SYSCTL" (spp-arg-list ("__m") 4874 . 4879) . ((symbol "VNET_NAME" 4880 . 4889) (semantic-list "(system_base_info.sctpsysctl.__m)" 4889 . 4922)))
+          ("SCTP_INIT_VRF_TABLEID" (spp-arg-list ("vrf") 6802 . 6807))
+          ("SCTP_OS_TIMER_START" . ((symbol "callout_reset" 8772 . 8785)))
+          ("SCTP_UNUSED" . ((symbol "__attribute__" 9075 . 9088) (semantic-list "((unused))" 9088 . 9098)))
+          ("SCTP_GATHER_MTU_FROM_INTFC" (spp-arg-list ("sctp_ifn") 10410 . 10420) . ((semantic-list "((sctp_ifn->ifn_p != NULL) ? ((struct ifnet *)(sctp_ifn->ifn_p))->if_mtu : 0)" 10421 . 10498)))
+          ("SCTP_SET_MTU_OF_ROUTE" (spp-arg-list ("sa" "rt" "mtu") 10528 . 10541) . 
+              ((DO "do" 10542 . 10544) (semantic-list "{ \\
+                                              if (rt != NULL) \\
+                                                 rt->rt_rmx.rmx_mtu = mtu; \\
+                                           }" 10545 . 10734) (WHILE "while" 10735 . 10740) (semantic-list "(0)" 10740 . 10743)))
+          ("SCTP_BASE_STATS_SYSCTL" . ((symbol "VNET_NAME" 4749 . 4758) (semantic-list "(system_base_info.sctpstat)" 4758 . 4785)))
+          ("SCTP_VRF_ADDR_HASH_SIZE" . ((number "16" 6737 . 6739)))
+          ("SCTP_GET_HEADER_FOR_OUTPUT" (spp-arg-list ("o_pak") 11643 . 11650) . ((number "0" 11651 . 11652)))
+          ("SCTP_ATTACH_CHAIN" (spp-arg-list ("pak" "m" "packet_length") 12068 . 12091) . 
+              ((DO "do" 12092 . 12094) (semantic-list "{ \\
+                                                 pak = m; \\
+                                                 pak->m_pkthdr.len = packet_length; \\
+                         }" 12095 . 12271) (WHILE "while" 12272 . 12277) (semantic-list "(0)" 12277 . 12280)))
+          ("SCTP_SO_IS_NBIO" (spp-arg-list ("so") 13001 . 13005) . ((semantic-list "((so)->so_state & SS_NBIO)" 13006 . 13032)))
+          ("SCTP_CLEAR_SO_NBIO" (spp-arg-list ("so") 13116 . 13120) . ((semantic-list "((so)->so_state &= ~SS_NBIO)" 13121 . 13149)))
+          ("SCTP_SB_LIMIT_RCV" (spp-arg-list ("so") 13542 . 13546) . 
+              ((symbol "so" 13547 . 13549) (punctuation "-" 13549 . 13550) (punctuation ">" 13550 . 13551) (symbol "so_rcv" 13551 . 13557) (punctuation "." 13557 . 13558) (symbol "sb_hiwat" 13558 . 13566)))
+          ("SCTP_SHA256_FINAL" (spp-arg-list ("x" "y") 15687 . 15692) . ((symbol "SHA256_Final" 15693 . 15705) (semantic-list "((caddr_t)x, y)" 15705 . 15720)))
+          ("SCTP_BASE_STATS" . 
+              ((symbol "V_system_base_info" 4690 . 4708) (punctuation "." 4708 . 4709) (symbol "sctpstat" 4709 . 4717)))
+          ("SCTP_SIZE_OF_VRF_HASH" . ((number "3" 6642 . 6643)))
+          ("SCTP_IFN_IS_IFT_LOOP" (spp-arg-list ("ifn") 6837 . 6842) . ((semantic-list "((ifn)->ifn_type == IFT_LOOP)" 6843 . 6872)))
+          ("SCTP_ROUTE_IS_REAL_LOOP" (spp-arg-list ("ro") 6904 . 6908) . ((semantic-list "((ro)->ro_rt && (ro)->ro_rt->rt_ifa && (ro)->ro_rt->rt_ifa->ifa_ifp && (ro)->ro_rt->rt_ifa->ifa_ifp->if_type == IFT_LOOP)" 6909 . 7030)))
+          ("SCTP_MALLOC" (spp-arg-list ("var" "type" "size" "name") 7435 . 7458) . 
+              ((DO "do" 7465 . 7467) (semantic-list "{ \\
+	var = (type)malloc(size, name, M_NOWAIT); \\
+    }" 7468 . 7522) (WHILE "while" 7523 . 7528) (semantic-list "(0)" 7529 . 7532)))
+          ("SCTP_ZONE_INIT" (spp-arg-list ("zone" "name" "size" "number") 7966 . 7992) . ((semantic-list "{ \\
+	zone = uma_zcreate(name, size, NULL, NULL, NULL, NULL, UMA_ALIGN_PTR,\\
+		0); \\
+	uma_zone_set_max(zone, number); \\
+}" 7993 . 8113)))
+          ("SCTP_OS_TIMER_ACTIVE" . ((symbol "callout_active" 8948 . 8962)))
+          ("SCTP_BUF_NEXT_PKT" (spp-arg-list ("m") 9260 . 9263) . ((semantic-list "(m->m_nextpkt)" 9264 . 9278)))
+          ("SCTP_SORESERVE" (spp-arg-list ("so" "send" "recv") 13275 . 13291) . ((symbol "soreserve" 13292 . 13301) (semantic-list "(so, send, recv)" 13301 . 13317)))
+          ("SCTP_IFNAMSIZ" . ((symbol "IFNAMSIZ" 6667 . 6675)))
+          ("SCTP_OS_TIMER_INIT" (spp-arg-list ("tmr") 8717 . 8722) . ((symbol "callout_init" 8723 . 8735) (semantic-list "(tmr, 1)" 8735 . 8743)))
+          ("SCTP_OS_TIMER_STOP" . ((symbol "callout_stop" 8813 . 8825)))
+          ("SCTP_BUF_PREPEND" . ((symbol "M_PREPEND" 9591 . 9600)))
+          ("SCTP_GATHER_MTU_FROM_ROUTE" (spp-arg-list ("sctp_ifa" "sa" "rt") 10317 . 10335) . ((semantic-list "((rt != NULL) ? rt->rt_rmx.rmx_mtu : 0)" 10336 . 10375)))
+          ("SCTP_BUF_EXTEND_BASE" (spp-arg-list ("m") 11042 . 11045) . ((semantic-list "(m->m_ext.ext_buf)" 11046 . 11064)))
+          ("SCTP_SET_SO_NBIO" (spp-arg-list ("so") 13057 . 13061) . ((semantic-list "((so)->so_state |= SS_NBIO)" 13062 . 13089)))
+          ("SCTP_SB_CLEAR" (spp-arg-list ("sb") 13447 . 13451) . 
+              ((semantic-list "(sb)" 13455 . 13459) (punctuation "." 13459 . 13460) (symbol "sb_cc" 13460 . 13465) (punctuation "=" 13466 . 13467) (number "0" 13468 . 13469) (punctuation ";" 13469 . 13470) (semantic-list "(sb)" 13475 . 13479) (punctuation "." 13479 . 13480) (symbol "sb_mb" 13480 . 13485) (punctuation "=" 13486 . 13487) (symbol "NULL" 13488 . 13492) (punctuation ";" 13492 . 13493) (semantic-list "(sb)" 13497 . 13501) (punctuation "." 13501 . 13502) (symbol "sb_mbcnt" 13502 . 13510) (punctuation "=" 13511 . 13512) (number "0" 13513 . 13514) (punctuation ";" 13514 . 13515)))
+          ("SCTP_FREE_SONAME" (spp-arg-list ("var") 7736 . 7741) . ((symbol "free" 7742 . 7746) (semantic-list "(var, M_SONAME)" 7746 . 7761)))
+          ("SCTP_ZONE_DESTROY" (spp-arg-list ("zone") 8140 . 8146) . ((symbol "uma_zdestroy" 8147 . 8159) (semantic-list "(zone)" 8159 . 8165)))
+          ("SCTP_SO_TYPE" (spp-arg-list ("so") 13196 . 13200) . ((semantic-list "((so)->so_type)" 13201 . 13216)))
+          ("SCTP_ZERO_COPY_EVENT" (spp-arg-list ("inp" "so") 14158 . 14167))
+          ("SCTP_READ_RANDOM" (spp-arg-list ("buf" "len") 15322 . 15332) . ((symbol "read_random" 15333 . 15344) (semantic-list "(buf, len)" 15344 . 15354)))
+          ("SCTP_LTRACE_ERR_RET" (spp-arg-list ("inp" "stcb" "net" "file" "err") 6496 . 6523))
+          ("SCTP_VRF_IFN_HASH_SIZE" . ((number "3" 6771 . 6772)))
+          ("SCTP_PROCESS_STRUCT" . 
+              ((STRUCT "struct" 7791 . 7797) (symbol "proc" 7798 . 7802) (punctuation "*" 7803 . 7804)))
+          ("SCTP_HASH_FREE" (spp-arg-list ("table" "hashmark") 8522 . 8539) . ((symbol "hashdestroy" 8540 . 8551) (semantic-list "(table, M_PCB, hashmark)" 8551 . 8575)))
+          ("sctp_get_tick_count" (spp-arg-list nil 9043 . 9045) . ((semantic-list "(ticks)" 9046 . 9053)))
+          ("SCTP_BUF_LEN" (spp-arg-list ("m") 9183 . 9186) . ((semantic-list "(m->m_len)" 9187 . 9197)))
+          ("SCTP_HEADER_TO_CHAIN" (spp-arg-list ("m") 11513 . 11516) . ((semantic-list "(m)" 11517 . 11520)))
+          ("SCTPDBG_ADDR" (spp-arg-list ("level" "addr") 5558 . 5571))
+          ("SCTP_GET_IFN_VOID_FROM_ROUTE" (spp-arg-list ("ro") 7203 . 7207) . 
+              ((semantic-list "(void *)" 7208 . 7216) (symbol "ro" 7216 . 7218) (punctuation "-" 7218 . 7219) (punctuation ">" 7219 . 7220) (symbol "ro_rt" 7220 . 7225) (punctuation "-" 7225 . 7226) (punctuation ">" 7226 . 7227) (symbol "rt_ifp" 7227 . 7233)))
+          ("SCTP_ZONE_GET" (spp-arg-list ("zone" "type") 8240 . 8252) . 
+              ((semantic-list "(type *)" 8256 . 8264) (symbol "uma_zalloc" 8264 . 8274) (semantic-list "(zone, M_NOWAIT)" 8274 . 8290) (punctuation ";" 8290 . 8291)))
+          ("SCTP_BUF_RECVIF" (spp-arg-list ("m") 9542 . 9545) . ((semantic-list "(m->m_pkthdr.rcvif)" 9546 . 9565)))
+          ("SCTP_GATHER_MTU_FROM_IFN_INFO" (spp-arg-list ("ifn" "ifn_index" "af") 10232 . 10252) . 
+              ((semantic-list "((struct ifnet *)ifn)" 10253 . 10274) (punctuation "-" 10274 . 10275) (punctuation ">" 10275 . 10276) (symbol "if_mtu" 10276 . 10282)))
+          ("SCTP_IS_IT_LOOPBACK" (spp-arg-list ("m") 12448 . 12451) . ((semantic-list "((m->m_flags & M_PKTHDR) && ((m->m_pkthdr.rcvif == NULL) || (m->m_pkthdr.rcvif->if_type == IFT_LOOP)))" 12452 . 12554)))
+          ("SCTP_ZERO_COPY_SENDQ_EVENT" (spp-arg-list ("inp" "so") 14247 . 14256))
+          ("M_NOTIFICATION" . ((symbol "M_PROTO1" 14327 . 14335)))
+          ("SCTP_IP6_OUTPUT" (spp-arg-list ("result" "o_pak" "ro" "ifp" "stcb" "vrf_id") 14798 . 14836) . ((semantic-list "{ \\
+	struct sctp_tcb *local_stcb = stcb; \\
+	m_clrprotoflags(o_pak); \\
+	if (local_stcb && local_stcb->sctp_ep) \\
+		result = ip6_output(o_pak, \\
+				    ((struct in6pcb *)(local_stcb->sctp_ep))->in6p_outputopts, \\
+				    (ro), 0, 0, ifp, NULL); \\
+	else \\
+		result = ip6_output(o_pak, NULL, (ro), 0, 0, ifp, NULL); \\
+}" 14839 . 15155)))
+          ("V_system_base_info" . ((symbol "VNET" 4580 . 4584) (semantic-list "(system_base_info)" 4584 . 4602)))
+          ("SCTP_DEFAULT_VRFID" . ((number "0" 6703 . 6704)))
+          ("SCTP_ROUTE_HAS_VALID_IFN" (spp-arg-list ("ro") 7337 . 7341) . ((semantic-list "((ro)->ro_rt && (ro)->ro_rt->rt_ifp)" 7342 . 7378)))
+          ("SCTP_M_COPYM" . ((symbol "m_copym" 8598 . 8605)))
+          ("SCTP_BUF_NEXT" (spp-arg-list ("m") 9219 . 9222) . ((semantic-list "(m->m_next)" 9223 . 9234)))
+          ("SCTP_DEREGISTER_INTERFACE" (spp-arg-list ("ifhandle" "af") 10874 . 10888))
+          ("SCTP_BUF_EXTEND_REFCNT" (spp-arg-list ("m") 11140 . 11143) . ((semantic-list "(*m->m_ext.ref_cnt)" 11144 . 11163)))
+          ("SCTP_BUF_GET_FLAGS" (spp-arg-list ("m") 11277 . 11280) . ((semantic-list "(m->m_flags)" 11281 . 11293)))
+          ("SCTP_HEADER_LEN" (spp-arg-list ("m") 11585 . 11588) . ((semantic-list "((m)->m_pkthdr.len)" 11589 . 11608)))
+          ("SCTP_GET_HLIM" (spp-arg-list ("inp" "ro") 12708 . 12717) . 
+              ((symbol "in6_selecthlim" 12718 . 12732) (semantic-list "((struct in6pcb *)&inp->ip_inp.inp, (ro ? (ro->ro_rt ? (ro->ro_rt->rt_ifp) : (NULL)) : (NULL)))" 12732 . 12827) (punctuation ";" 12827 . 12828)))
+          ("SCTP_IP_OUTPUT" (spp-arg-list ("result" "o_pak" "ro" "stcb" "vrf_id") 14412 . 14445) . ((semantic-list "{ \\
+	int o_flgs = IP_RAWOUTPUT; \\
+	struct sctp_tcb *local_stcb = stcb; \\
+	if (local_stcb && \\
+	    local_stcb->sctp_ep && \\
+	    local_stcb->sctp_ep->sctp_socket) \\
+		o_flgs |= local_stcb->sctp_ep->sctp_socket->so_options & SO_DONTROUTE; \\
+	m_clrprotoflags(o_pak); \\
+	result = ip_output(o_pak, NULL, ro, o_flgs, 0, NULL); \\
+}" 14448 . 14773)))
+          ("SCTP_SHA256_CTX" . ((symbol "SHA256_CTX" 15573 . 15583)))
+          ("SCTP_BASE_INFO" (spp-arg-list ("__m") 4625 . 4630) . 
+              ((symbol "V_system_base_info" 4631 . 4649) (punctuation "." 4649 . 4650) (symbol "sctppcbinfo" 4650 . 4661) (punctuation "." 4661 . 4662) (symbol "__m" 4662 . 4665)))
+          ("SCTP_BASE_VAR" (spp-arg-list ("__m") 4944 . 4949) . 
+              ((symbol "V_system_base_info" 4950 . 4968) (punctuation "." 4968 . 4969) (symbol "__m" 4969 . 4972)))
+          ("USER_ADDR_NULL" . ((semantic-list "(NULL)" 5007 . 5013)))
+          ("SCTP_MALLOC_SONAME" (spp-arg-list ("var" "type" "size") 7606 . 7623) . 
+              ((DO "do" 7630 . 7632) (semantic-list "{ \\
+	var = (type)malloc(size, M_SONAME, M_WAITOK | M_ZERO); \\
+    }" 7633 . 7700) (WHILE "while" 7701 . 7706) (semantic-list "(0)" 7707 . 7710)))
+          ("SCTP_ZONE_FREE" (spp-arg-list ("zone" "element") 8364 . 8379) . 
+              ((symbol "uma_zfree" 8383 . 8392) (semantic-list "(zone, element)" 8392 . 8407) (punctuation ";" 8407 . 8408)))
+          ("SCTP_OS_TIMER_PENDING" . ((symbol "callout_pending" 8903 . 8918)))
+          ("SCTP_OS_TIMER_DEACTIVATE" . ((symbol "callout_deactivate" 8996 . 9014)))
+          ("SCTP_PKTLOG_WRITERS_NEED_LOCK" . ((number "3" 10108 . 10109)))
+          ("SCTP_GET_PKT_VRFID" (spp-arg-list ("m" "vrf_id") 11916 . 11927) . ((semantic-list "((vrf_id = SCTP_DEFAULT_VRFID) != SCTP_DEFAULT_VRFID)" 11929 . 11982)))
+          ("SCTP_SOWAKEUP" (spp-arg-list ("so") 13361 . 13365) . ((symbol "wakeup" 13366 . 13372) (semantic-list "(&(so)->so_timeo)" 13372 . 13389)))
+          ("SCTP_SHA1_UPDATE" . ((symbol "SHA1Update" 15482 . 15492)))
+          ("SCTP_SHA256_INIT" . ((symbol "SHA256_Init" 15609 . 15620)))
+          ("SCTP_PRINTF" (spp-arg-list ("params...") 5053 . 5064) . ((symbol "printf" 5065 . 5071) (semantic-list "(params)" 5071 . 5079)))
+          ("SCTP_MAX_VRF_ID" . ((number "0" 6610 . 6611)))
+          ("SCTP_OS_TIMER_STOP_DRAIN" . ((symbol "callout_drain" 8859 . 8872)))
+          ("SCTP_BUF_EXTEND_SIZE" (spp-arg-list ("m") 9458 . 9461) . ((semantic-list "(m->m_ext.ext_size)" 9462 . 9481)))
+          ("SCTP_RELEASE_PKT" (spp-arg-list ("m") 11708 . 11711) . ((symbol "sctp_m_freem" 11712 . 11724) (semantic-list "(m)" 11724 . 11727)))
+          ("SCTP_SHA1_CTX" . ((symbol "SHA1_CTX" 15415 . 15423)))
+          )
+
+    )
+   )
+  :file "!home!niuroy!Dropbox!Source!freebsd_sctp!sys!netinet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

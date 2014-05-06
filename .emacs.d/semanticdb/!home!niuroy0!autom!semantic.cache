@@ -1,0 +1,72 @@
+;; Object autom/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "autom/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("helper.h" include nil nil [1 20])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31 40])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41 54]))                  
+                :type "int")
+                nil [22 73]))          
+    :file "test.cpp"
+    :pointmax 74
+    :fsize 73
+    :lastmodtime '(21352 25172 973583 784000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "helper.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("Helper" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [16 23])
+                    ("help" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [26 38])
+                    ("dummy" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [41 54]))                  
+                :type "class")
+                nil [1 57]))          
+    :file "helper.h"
+    :pointmax 58
+    :fsize 57
+    :lastmodtime '(21352 25290 688982 553000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("helper.h" include nil nil [1 20])
+            ("myadd.h" include (:system-flag t) nil [21 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 141]))          
+    :file "main.cpp"
+    :pointmax 142
+    :fsize 141
+    :lastmodtime '(21352 25516 573 884000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!niuroy0!autom!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,824 @@
+;; Object netinet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "netinet/"
+  :tables (list 
+   (semanticdb-table "sctp_output.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "sctp_output.c"
+    :pointmax 451552
+    :fsize 451551
+    :lastmodtime '(21352 33483 818939 703000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sctp_auth.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("sys/cdefs.h" include (:system-flag t) nil [1734 1756])
+            ("__FBSDID" function
+               (:prototype-flag t
+                :type "int")
+                nil [1757 1855])
+            ("netinet/sctp_os.h" include (:system-flag t) nil [1857 1885])
+            ("netinet/sctp.h" include (:system-flag t) nil [1886 1911])
+            ("netinet/sctp_header.h" include (:system-flag t) nil [1912 1944])
+            ("netinet/sctp_pcb.h" include (:system-flag t) nil [1945 1974])
+            ("netinet/sctp_var.h" include (:system-flag t) nil [1975 2004])
+            ("netinet/sctp_sysctl.h" include (:system-flag t) nil [2005 2037])
+            ("netinet/sctputil.h" include (:system-flag t) nil [2038 2067])
+            ("netinet/sctp_indata.h" include (:system-flag t) nil [2068 2100])
+            ("netinet/sctp_output.h" include (:system-flag t) nil [2101 2133])
+            ("netinet/sctp_auth.h" include (:system-flag t) nil [2134 2164])
+            ("sctp_clear_chunklist" function
+               (:arguments 
+                  ( ("chklist" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2395 2425]))                  
+                :type "void")
+                nil [2369 2496])
+            ("sctp_alloc_chunklist" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2541 2546]))                  
+                :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                nil [2498 2834])
+            ("sctp_free_chunklist" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2861 2888]))                  
+                :type "void")
+                nil [2836 2946])
+            ("sctp_copy_chunklist" function
+               (:pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2990 3017]))                  
+                :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                nil [2948 3268])
+            ("sctp_auth_add_chunk" function
+               (:arguments 
+                  ( ("chunk" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3345 3359])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3360 3387]))                  
+                :type "int")
+                nil [3321 3828])
+            ("sctp_auth_delete_chunk" function
+               (:arguments 
+                  ( ("chunk" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3912 3926])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3927 3954]))                  
+                :type "int")
+                nil [3885 4310])
+            ("sctp_auth_get_chklist_size" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4346 4379]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4312 4451])
+            ("sctp_auth_set_default_chunks" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4543 4570]))                  
+                :type "void")
+                nil [4509 4672])
+            ("sctp_serialize_auth_chunks" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4828 4861])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4862 4876]))                  
+                :type "int")
+                nil [4797 5044])
+            ("sctp_pack_auth_chunks" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5072 5105])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5106 5120]))                  
+                :type "int")
+                nil [5046 5587])
+            ("sctp_unpack_auth_chunks" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5617 5637])
+                    ("num_chunks" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5638 5657])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chklist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5662 5689]))                  
+                :type "int")
+                nil [5589 6217])
+            ("sctp_alloc_key" function
+               (:pointer 1
+                :arguments 
+                  ( ("keylen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6310 6326]))                  
+                :type ("sctp_key_t" type (:type "class") nil nil))
+                nil [6282 6550])
+            ("sctp_free_key" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6571 6588]))                  
+                :type "void")
+                nil [6552 6644])
+            ("sctp_print_key" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6666 6683])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6684 6700]))                  
+                :type "void")
+                nil [6646 6997])
+            ("sctp_show_key" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7018 7035])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7036 7052]))                  
+                :type "void")
+                nil [6999 7349])
+            ("sctp_get_keylen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7383 7400]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [7351 7466])
+            ("sctp_generate_random_key" function
+               (:pointer 1
+                :arguments 
+                  ( ("keylen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7561 7577]))                  
+                :type ("sctp_key_t" type (:type "class") nil nil))
+                nil [7523 7792])
+            ("sctp_set_key" function
+               (:pointer 1
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7820 7834])
+                    ("keylen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7835 7851]))                  
+                :type ("sctp_key_t" type (:type "class") nil nil))
+                nil [7794 8033])
+            ("sctp_compare_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("key1" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8235 8253])
+                    ("key2" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8254 8272]))                  
+                :type "int")
+                nil [8207 9161])
+            ("sctp_compute_hashkey" function
+               (:pointer 1
+                :arguments 
+                  ( ("key1" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9381 9399])
+                    ("key2" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9400 9418])
+                    ("shared" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9419 9439]))                  
+                :type ("sctp_key_t" type (:type "class") nil nil))
+                nil [9347 10642])
+            ("sctp_alloc_sharedkey" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10685 10690]))                  
+                :type ("sctp_sharedkey_t" type (:type "class") nil nil))
+                nil [10645 10984])
+            ("sctp_free_sharedkey" function
+               (:arguments 
+                  ( ("skey" variable
+                       (:pointer 1
+                        :type ("sctp_sharedkey_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11011 11035]))                  
+                :type "void")
+                nil [10986 11220])
+            ("sctp_find_sharedkey" function
+               (:pointer 1
+                :arguments 
+                  ( ("shared_keys" variable
+                       (:pointer 1
+                        :type ("sctp_keyhead" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11261 11294])
+                    ("key_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11295 11311]))                  
+                :type ("sctp_sharedkey_t" type (:type "class") nil nil))
+                nil [11222 11448])
+            ("sctp_insert_sharedkey" function
+               (:arguments 
+                  ( ("shared_keys" variable
+                       (:pointer 1
+                        :type ("sctp_keyhead" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11476 11509])
+                    ("new_skey" variable
+                       (:pointer 1
+                        :type ("sctp_sharedkey_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11514 11542]))                  
+                :type "int")
+                nil [11450 12705])
+            ("sctp_auth_key_acquire" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12734 12756])
+                    ("key_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12757 12773]))                  
+                :type "void")
+                nil [12707 13113])
+            ("sctp_auth_key_release" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13142 13164])
+                    ("key_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13165 13181])
+                    ("so_locked" variable (:type "int") (reparse-symbol arg-sub-list) [13182 13269])
+                    ("" variable (:type ("SCTP_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13258 13278]))                  
+                :type "void")
+                nil [13115 13991])
+            ("sctp_copy_sharedkey" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("skey" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sctp_sharedkey_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14039 14069]))                  
+                :type ("sctp_sharedkey_t" type (:type "class") nil nil))
+                nil [13993 14388])
+            ("sctp_copy_skeylist" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sctp_keyhead" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14413 14444])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("sctp_keyhead" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14445 14471]))                  
+                :type "int")
+                nil [14390 14763])
+            ("sctp_alloc_hmaclist" function
+               (:pointer 1
+                :arguments 
+                  ( ("num_hmacs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14804 14822]))                  
+                :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                nil [14766 15166])
+            ("sctp_free_hmaclist" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15192 15215]))                  
+                :type "void")
+                nil [15168 15293])
+            ("sctp_auth_add_hmacid" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15320 15343])
+                    ("hmac_id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15344 15361]))                  
+                :type "int")
+                nil [15295 15949])
+            ("sctp_copy_hmaclist" function
+               (:pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15988 16011]))                  
+                :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                nil [15951 16385])
+            ("sctp_default_supported_hmaclist" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16437 16442]))                  
+                :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                nil [16387 16741])
+            ("sctp_negotiate_hmacid" function
+               (:arguments 
+                  ( ("peer" variable
+                       (:pointer 1
+                        :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16904 16927])
+                    ("local" variable
+                       (:pointer 1
+                        :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16928 16952]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [16873 17397])
+            ("sctp_serialize_hmaclist" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17540 17563])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17564 17578]))                  
+                :type "int")
+                nil [17512 17832])
+            ("sctp_verify_hmac_param" function
+               (:arguments 
+                  ( ("hmacs" variable
+                       (:pointer 1
+                        :type ("sctp_auth_hmac_algo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17861 17895])
+                    ("num_hmacs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17896 17915]))                  
+                :type "int")
+                nil [17834 18065])
+            ("sctp_alloc_authinfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18105 18110]))                  
+                :type ("sctp_authinfo_t" type (:type "class") nil nil))
+                nil [18067 18379])
+            ("sctp_free_authinfo" function
+               (:arguments 
+                  ( ("authinfo" variable
+                       (:pointer 1
+                        :type ("sctp_authinfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18405 18432]))                  
+                :type "void")
+                nil [18381 18864])
+            ("sctp_get_auth_chunk_len" function
+               (:arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18900 18919]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [18867 19042])
+            ("sctp_get_hmac_digest_len" function
+               (:arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19078 19097]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [19044 19359])
+            ("sctp_get_hmac_block_len" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19403 19422]))                  
+                :type "int")
+                nil [19361 19666])
+            ("sctp_hmac_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19695 19714])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("sctp_hash_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19715 19741]))                  
+                :type "void")
+                nil [19668 20033])
+            ("sctp_hmac_update" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20064 20083])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("sctp_hash_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20084 20110])
+                    ("text" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20115 20130])
+                    ("textlen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20131 20148]))                  
+                :type "void")
+                nil [20035 20474])
+            ("sctp_hmac_final" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20504 20523])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("sctp_hash_context_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20524 20550])
+                    ("digest" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20555 20572]))                  
+                :type "void")
+                nil [20476 20882])
+            ("sctp_hmac" function
+               (:arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21262 21281])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21282 21296])
+                    ("keylen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21297 21313])
+                    ("text" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21318 21333])
+                    ("textlen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21334 21351])
+                    ("digest" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21352 21369]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21243 22994])
+            ("sctp_hmac_m" function
+               (:arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23036 23055])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23056 23070])
+                    ("keylen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23071 23087])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("mbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23092 23107])
+                    ("m_offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23108 23126])
+                    ("digest" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23127 23144])
+                    ("trailer" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23145 23162]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [23015 25451])
+            ("sctp_verify_hmac" function
+               (:arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25603 25622])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25623 25637])
+                    ("keylen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25638 25654])
+                    ("text" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25659 25674])
+                    ("textlen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25675 25692])
+                    ("digest" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25697 25714])
+                    ("digestlen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25715 25734]))                  
+                :type "int")
+                nil [25582 26306])
+            ("sctp_compute_hmac" function
+               (:arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26462 26481])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26482 26499])
+                    ("text" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26500 26515])
+                    ("textlen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26520 26537])
+                    ("digest" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26538 26555]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [26435 27462])
+            ("sctp_compute_hmac_m" function
+               (:arguments 
+                  ( ("hmac_algo" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27512 27531])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("sctp_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27532 27549])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("mbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27550 27565])
+                    ("m_offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27570 27588])
+                    ("digest" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27589 27606]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [27483 28485])
+            ("sctp_auth_is_supported_hmac" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("sctp_hmaclist_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28519 28542])
+                    ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28543 28555]))                  
+                :type "int")
+                nil [28487 28755])
+            ("sctp_clear_cachedkeys" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28973 28995])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28996 29011]))                  
+                :type "void")
+                nil [28946 29322])
+            ("sctp_clear_cachedkeys_ep" function
+               (:arguments 
+                  ( ("inp" variable
+                       (:pointer 1
+                        :type ("sctp_inpcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29491 29514])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29515 29530]))                  
+                :type "void")
+                nil [29461 29795])
+            ("sctp_delete_sharedkey" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29910 29932])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29933 29948]))                  
+                :type "int")
+                nil [29884 30523])
+            ("sctp_delete_sharedkey_ep" function
+               (:arguments 
+                  ( ("inp" variable
+                       (:pointer 1
+                        :type ("sctp_inpcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30641 30664])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30665 30680]))                  
+                :type "int")
+                nil [30612 31210])
+            ("sctp_auth_setactivekey" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31323 31345])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31346 31361]))                  
+                :type "int")
+                nil [31296 31843])
+            ("sctp_auth_setactivekey_ep" function
+               (:arguments 
+                  ( ("inp" variable
+                       (:pointer 1
+                        :type ("sctp_inpcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31957 31980])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31981 31996]))                  
+                :type "int")
+                nil [31927 32229])
+            ("sctp_deact_sharedkey" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32350 32372])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32373 32388]))                  
+                :type "int")
+                nil [32325 32986])
+            ("sctp_deact_sharedkey_ep" function
+               (:arguments 
+                  ( ("inp" variable
+                       (:pointer 1
+                        :type ("sctp_inpcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33107 33130])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33131 33146]))                  
+                :type "int")
+                nil [33079 33608])
+            ("sctp_auth_get_cookie_params" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33717 33739])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("mbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33740 33755])
+                    ("offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33760 33776])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33777 33793]))                  
+                :type "void")
+                nil [33684 38112])
+            ("sctp_fill_hmac_digest_m" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("mbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38202 38217])
+                    ("auth_offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38218 38239])
+                    ("auth" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chunk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38244 38273])
+                    ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38274 38296])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38297 38312]))                  
+                :type "void")
+                nil [38173 39690])
+            ("sctp_bzero_m" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("mbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39718 39733])
+                    ("m_offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39734 39752])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39753 39767]))                  
+                :type "void")
+                nil [39693 40487])
+            ("sctp_handle_auth" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40655 40677])
+                    ("auth" variable
+                       (:pointer 1
+                        :type ("sctp_auth_chunk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40678 40707])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("mbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40712 40727])
+                    ("offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40728 40744]))                  
+                :type "int")
+                nil [40634 44495])
+            ("sctp_notify_authentication" function
+               (:arguments 
+                  ( ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44561 44583])
+                    ("indication" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44584 44604])
+                    ("keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44609 44624])
+                    ("alt_keyid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44625 44644])
+                    ("so_locked" variable (:type "int") (reparse-symbol arg-sub-list) [44645 44732])
+                    ("" variable (:type ("SCTP_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44721 44741]))                  
+                :type "void")
+                nil [44529 46301])
+            ("sctp_validate_init_auth_params" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("mbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46526 46541])
+                    ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [46542 46553])
+                    ("limit" variable (:type "int") (reparse-symbol arg-sub-list) [46554 46564]))                  
+                :type "int")
+                nil [46491 50357])
+            ("sctp_initialize_auth_params" function
+               (:arguments 
+                  ( ("inp" variable
+                       (:pointer 1
+                        :type ("sctp_inpcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50392 50415])
+                    ("stcb" variable
+                       (:pointer 1
+                        :type ("sctp_tcb" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50416 50438]))                  
+                :type "void")
+                nil [50359 52886]))          
+    :file "sctp_auth.c"
+    :pointmax 52887
+    :fsize 52886
+    :lastmodtime '(21208 28814 0 0)
+    :unmatched-syntax '((string 1766 . 1853))
+    )
+   )
+  :file "!mirror!usr!src!sys!netinet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

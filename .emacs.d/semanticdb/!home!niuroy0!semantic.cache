@@ -1,0 +1,38 @@
+;; Object niuroy0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "niuroy0/"
+  :tables (list 
+   (semanticdb-table "temp.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31 40])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41 54]))                  
+                :type "int")
+                nil [22 101]))          
+    :file "temp.cpp"
+    :pointmax 103
+    :fsize 99
+    :lastmodtime '(21352 22849 76228 98000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "1.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "1.c"
+    :pointmax 6
+    :fsize 52
+    :lastmodtime '(21352 32013 65969 140000)
+    :unmatched-syntax '((symbol 1 . 5) (symbol 1 . 5) (symbol 1 . 4))
+    )
+   )
+  :file "!home!niuroy0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
